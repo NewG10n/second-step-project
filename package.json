@@ -29,9 +29,7 @@
     "gulp-purgecss": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
-    "sass": "^1.58.3"
-  },
-  "dependencies": {
+    "sass": "^1.58.3",
     "scss-reset": "^1.2.2"
   }
 }
