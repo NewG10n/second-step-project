@@ -2,9 +2,124 @@
 @import "variables";
 @import "mixins";
 
+// Common styles
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .wrapper {
   width: 100%;
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
+  @include flex-center;
+}
+
+// "Pricing" styles
+.pricing {
+  background-image: url("img/pricing-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-container {
+    flex-grow: 1;
+    @include flex-column;
+    align-items: stretch;
+    gap: 60px;
+    margin: 114px auto 74px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: #ffffff;
+  }
+
+  &__list {
+    @include flex-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    &-item {
+      @include flex-column;
+      justify-content: space-between;
+      align-items: stretch;
+      text-align: center;
+      min-width: 258px;
+      height: 460px;
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.11);
+
+      .item-title {
+        padding: 36px;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.06);
+      }
+
+      .item-price {
+        font-size: 60px;
+        line-height: 90px;
+
+        &-amount {
+          font-weight: 700;
+        }
+
+        &-period {
+          display: block;
+          padding: 20px;
+          font-size: 14px;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          margin: 30px auto 0;
+          background-color: #8d81ac;
+          width: 60px;
+          height: 5px;
+        }
+      }
+
+      .item-buy {
+        flex-grow: 1;
+        @include flex-column;
+        justify-content: space-around;
+        align-items: center;
+
+        &-type {
+          font-size: 16px;
+          line-height: 18px;
+        }
+
+        &-btn {
+          padding: 14px 36px;
+          font-size: 16px;
+          line-height: 18px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #ffffff;
+          background-color: rgba(255, 255, 255, 0.15);
+          border-radius: 36px;
+        }
+      }
+
+      &:nth-child(3) {
+        min-width: 300px;
+        height: 560px;
+        background-color: rgba(70, 48, 72, 0.84);
+
+        .item-title {
+          background-color: rgba(0, 0, 0, 0.11);
+        }
+      }
+    }
+  }
 }

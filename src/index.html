@@ -8,6 +8,13 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fork App</title>
+    <!--  Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!--Stylesheets-->
     <link rel="stylesheet" href="style.min.css" />
   </head>
@@ -16,39 +23,43 @@
       <section class="pricing">
         <div class="wrapper">
           <div class="pricing-container">
-            <h2>Fork Subscription Pricing</h2>
+            <h2 class="pricing__title">Fork Subscription Pricing</h2>
             <ul class="pricing__list">
-              <li class="pricing__item">
-                <h3 class="item__title">Students</h3>
-                <p class="item__price">$29</p>
-                <p class="item__price-period">per month</p>
-                <p class="item__type">Personal License</p>
-                <a href="" class="item__btn">purchase</a>
+              <li class="pricing__list-item">
+                <h3 class="item-title">Students</h3>
+                <p class="item-price">$<span class="item-price-amount">29</span>  <span class="item-price-period">per month</span></p>
+                <div class="item-buy">
+                  <p class="item-buy-type">Personal License <br /></p>
+                  <a href="#" class="item-buy-btn">purchase</a>
+                </div>
               </li>
-              <li class="pricing__item">
-                <h3 class="item__title">professional</h3>
-                <p class="item__price">$59</p>
-                <p class="item__price-period">per month</p>
-                <p class="item__type">
-                  Professional License <br />Email Support
-                </p>
-                <a href="" class="item__btn">purchase</a>
+              <li class="pricing__list-item">
+                <h3 class="item-title">professional</h3>
+                <p class="item-price">$<span class="item-price-amount">59</span>  <span class="item-price-period">per month</span></p>
+                <div class="item-buy">
+                  <p class="item-buy-type">
+                    Professional License <br />Email Support
+                  </p>
+                  <a href="#" class="item-buy-btn">purchase</a>
+                </div>
               </li>
-              <li class="pricing__item">
-                <h3 class="item__title">agency</h3>
-                <p class="item__price">$99</p>
-                <p class="item__price-period">per month</p>
-                <p class="item__type">1-12 Team Members <br />Phone Support</p>
-                <a href="" class="item__btn">purchase</a>
+              <li class="pricing__list-item">
+                <h3 class="item-title">agency</h3>
+                <p class="item-price">$<span class="item-price-amount">99</span>  <span class="item-price-period">per month</span></p>
+                <div class="item-buy">
+                  <p class="item-buy-type">1-12 Team Members <br />Phone Support</p>
+                  <a href="#" class="item-buy-btn">purchase</a>
+                </div>
               </li>
-              <li class="pricing__item">
-                <h3 class="item__title">enterprise</h3>
-                <p class="item__price">$159</p>
-                <p class="item__price-period">per month</p>
-                <p class="item__type">
-                  Unlimited Team Members<br />P24/ 7 Phone Support
-                </p>
-                <a href="" class="item__btn">purchase</a>
+              <li class="pricing__list-item">
+                <h3 class="item-title">enterprise</h3>
+                <p class="item-price">$ <span class="item-price-amount">159</span>  <span class="item-price-period">per month</span></p>
+                <div class="item-buy">
+                  <p class="item-buy-type">
+                    Unlimited Team Members<br />24/ 7 Phone Support
+                  </p>
+                  <a href="#" class="item-buy-btn">purchase</a>
+                </div>
               </li>
             </ul>
           </div>
