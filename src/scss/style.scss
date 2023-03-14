@@ -1,6 +1,8 @@
 @import "../../node_modules/scss-reset/src/scss/_reset.scss";
 @import "variables";
 @import "mixins";
+@import "features-section";
+@import "presentation-section";
 
 // Common styles
 html {
@@ -28,7 +30,7 @@ body {
 
 // "Pricing" styles
 .pricing {
-  background: url("img/pricing-bg.png") center / cover no-repeat fixed;
+  background: url("../img/pricing-bg.png") center / cover no-repeat fixed;
 
   &--glass-bg {
     backdrop-filter: blur(30px);
