@@ -1,7 +1,7 @@
 @import "../../node_modules/scss-reset/src/scss/_reset.scss";
 @import "variables";
 @import "mixins";
-
+@import "header";
 // Common styles
 html {
 }
@@ -9,6 +9,15 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
 }
 
 .wrapper {

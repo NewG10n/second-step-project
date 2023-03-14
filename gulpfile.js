@@ -31,11 +31,6 @@ function styles() {
   return src("src/scss/style.scss")
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(
-      purgecss({
-        content: ["src/*.html"],
-      })
-    )
-    .pipe(
       autoprefixer({
         cascade: false,
       })
