@@ -1,0 +1,73 @@
+@use "variables";
+@use "mixins";
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  @include mixins.flex-center;
+}
+
+.features {
+  height: 711px;
+  background-color: variables.$bg-color-features-section;
+  @include mixins.text-font-montserrat;
+
+  &__wrap {
+    margin-top: 98px;
+    @include mixins.flex;
+  }
+
+  &__left-side {
+    @include mixins.flex-blocks;
+    width: 536px;
+
+  }
+  .text &__text-blocks {
+    margin-bottom: 34px;
+  }
+
+  .photo img {
+    margin-bottom: 55%;
+  }
+  .photo img:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .text &__text-blocks:last-child {
+    margin-bottom: 0;
+  }
+
+  &__text-blocks-header {
+    @include mixins.text-font-montserrat;
+    font-size: 16px;
+    line-height: 21px;
+    @include mixins.text-flex-center;
+    color: variables.$title-text-color-features-section;
+    margin-bottom: 16px;
+  }
+
+  &__text-blocks-paragraph {
+    @include mixins.text-font-montserrat;
+    font-size: 14px;
+    line-height: 21px;
+    @include mixins.text-flex-center;
+    color: variables.$text-color-features-section;
+  }
+
+  #features-photo {
+    position: absolute;
+    right: 0;
+  }
+
+  &__header {
+    @include mixins.text-font-montserrat;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    @include mixins.text-flex-center;
+    color: variables.$header-color-features-section-btn;
+    margin-left: 50px;
+    margin-bottom: 18px;
+  }
+}

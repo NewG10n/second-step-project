@@ -7,7 +7,7 @@ Second step-project in DAN.IT Education (teamwork)
 To style our page we used SCSS (mixins, variables etc.)
 Our project is compiled with Gulp, where we used such plugins as: htmlmin, sass, concat, autoprefixer, uglify, imagemin, clean etc.
 
-To get a look on Fork App visit GitHub Pages link: https://
+To get a look on Fork App visit GitHub Pages: https://
 
 ### _Developed by:_
 
