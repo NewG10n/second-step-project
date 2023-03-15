@@ -1,14 +1,28 @@
-$hdr-nav-bg-color: #27262A;
-$hdr-nav-txt-hover-color: #FFFFFF;
-$hdr-nav-txt-color: #8D81AC;
-$hdr-title-color: #FFFFFF;
-$hdr-text-color: #8D81AC;
-$hdr-subtext-color: #848E97;
+$hdr-nav-bg-color: #27262A; // $bg-darkgray
+$hdr-nav-txt-hover-color: #FFFFFF; // $clear-white
+$hdr-nav-txt-color: #8D81AC; // $primary-color
+$hdr-title-color: #FFFFFF; // $clear-white
+$hdr-text-color: #8D81AC; // $primary-color
+$hdr-subtext-color: #848E97; // $text-primary-color
 
 //section "Here is what you get"
-$white-color: #FFFFFF;
-$bg-color-features-section: #F4F4F4;
-$header-color-features-section-btn: #8D81AC;
-$title-text-color-features-section: #323232;
-$text-color-features-section: #848E97;
-$header-present-section: #635C73;
+$white-color: #FFFFFF; // $clear-white
+$bg-color-features-section: #F4F4F4; // $bg-lightgray
+$header-color-features-section-btn: #8D81AC; // $primary-color
+$title-text-color-features-section: #323232; //$text-secondary-color
+$text-color-features-section: #848E97; // $text-primary-color
+$header-present-section: #635C73; // $title-secondary-color
+
+// Common color theme:
+$primary-color: #8D81AC;
+$title-secondary-color: #635C73;
+$text-primary-color: #848E97;
+$text-secondary-color: #323232;
+$clear-white: #FFFFFF;
+$total-black: #000000;
+$bg-primary-color: #463048;
+$bg-lightgray: #F4F4F4;
+$bg-darkgray: #27262A;
+
+
+
