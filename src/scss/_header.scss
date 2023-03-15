@@ -1,6 +1,11 @@
 @import "mixins";
 @import "variables";
 
+.header-container{
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
+}
 
 .header-btn{
   font-weight: 700;
