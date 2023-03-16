@@ -236,7 +236,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
 
   .header {
     &__wrapper {
@@ -284,7 +284,7 @@
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   .header {
     &__nav {
       height: 100px;
@@ -334,3 +334,11 @@
 }
 
 
+@media screen and (min-width: 1440px) {
+  .header {
+    &__wrapper {
+      background: url("img/header-bg.png") center / cover no-repeat;
+      height: 100vh;
+    }
+  }
+}
