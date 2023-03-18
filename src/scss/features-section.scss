@@ -2,15 +2,22 @@
 @use "mixins";
 
 .container {
-  padding-left: 10px;
-  padding-right: 10px;
+  //padding-left: 10px;
+  //padding-right: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
   @include mixins.flex-center;
 }
+
+
+
 
 .features {
   height: 711px;
   background-color: variables.$bg-color-features-section;
   @include mixins.text-font-montserrat;
+  position: relative;
 
   &__wrap {
     margin-top: 98px;
@@ -20,18 +27,22 @@
   &__left-side {
     @include mixins.flex-blocks;
     width: 536px;
+    padding: 0 10px;
+    .photo img:first-child {
+      margin-bottom: 77px;
+    }
+    .photo img:nth-child(2) {
+      margin-bottom: 64px;
+    }
+    .photo img:nth-child(3) {
+      margin-bottom: 65px;
+    }
 
   }
   .text &__text-blocks {
     margin-bottom: 34px;
   }
 
-  .photo img {
-    margin-bottom: 55%;
-  }
-  .photo img:last-child {
-    margin-bottom: 0;
-  }
 
 
   .text &__text-blocks:last-child {
@@ -58,6 +69,7 @@
   #features-photo {
     position: absolute;
     right: 0;
+    top: 159px;
   }
 
   &__header {
@@ -65,9 +77,87 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
-    @include mixins.text-flex-center;
+    //@include mixins.text-flex-start;
     color: variables.$header-color-features-section-btn;
     margin-left: 50px;
     margin-bottom: 18px;
   }
+}
+
+@media screen and (max-width: 1440px) {
+  .features {
+    &__wrap {
+      margin-top: 98px;
+      @include mixins.flex;
+      height: 100vh;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .features {
+    &__wrap {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    &__header {
+      order: 1;
+      margin-bottom: 50px;
+    }
+    &__left-side {
+      order: 2;
+      width: 703px;
+    }
+    .text &__text-blocks {
+      margin-bottom: 58px;
+    }
+    .photo img:nth-child(2) {
+      margin-right: 25px;
+    }
+    .photo img:nth-child(3) {
+      margin-right: 80px;
+    }
+    .photo img:last-child {
+      margin-bottom: 0;
+    }
+    #features-photo {
+      top: 740px;
+      order: 3;
+    }
+
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .features {
+    &__wrap {
+      @include mixins.flex-between;
+      flex-wrap: wrap;
+
+    }
+    &__header {
+      order: 1;
+      margin-bottom: 36px;
+      padding: 0 10px;
+    }
+    &__left-side {
+      order: 2;
+      width: 269px;
+    }
+    .photo img:nth-child(2) {
+      margin-right: 25px;
+    }
+    .photo img:nth-child(3) {
+      margin-right: 80px;
+    }
+    .photo img:last-child {
+      margin-bottom: 0;
+    }
+    #features-photo {
+      top: 740px;
+      order: 3;
+    }
+
+  }
+
 }

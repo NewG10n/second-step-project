@@ -2,14 +2,16 @@
 @use "mixins";
 
 .container {
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
   @include mixins.flex-center;
 
 }
 
 .present {
   height: 391px;
+  position: relative;
 
   &__wrap {
     width: 864px;
@@ -21,6 +23,9 @@
 
 
   .btn-download {
+    position: absolute;
+    top: -31px;
+
     width: 390px;
     height: 62px;
     background: variables.$header-color-features-section-btn;
@@ -33,7 +38,8 @@
     @include mixins.flex-center;
     text-align: center;
     color: variables.$white-color;
-    margin-top: 10px;
+    cursor: pointer;
+
   }
 
   .text-after-btn {
@@ -43,7 +49,14 @@
     @include mixins.flex-center;
     text-align: center;
     color: variables.$text-color-features-section;
-    margin-top: 19px;
+    margin-top: 48px;
+  }
+
+  .btn-download:hover {
+    background: variables.$white-color;
+    border: 2px solid variables.$header-color-features-section-btn;
+    border-radius: 40px;
+    color: variables.$header-color-features-section-btn;
   }
 
 
@@ -58,7 +71,7 @@
     text-transform: uppercase;
     color: variables.$header-present-section;
     margin-bottom: 35px;
-    margin-top: 80px;
+    margin-top: 66px;
   }
   &__text {
     @include mixins.text-font-lato;
@@ -67,7 +80,128 @@
     @include mixins.flex-center;
     text-align: center;
     color: variables.$title-text-color-features-section;
+    margin-bottom: 13px;
   }
 
+  .github-btn {
+    @include mixins.flex-center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 70px;
+  }
+
+  .btn-git-each {
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: variables.$color-btn-text;
+    background-color: variables.$color-btn-bg;
+    border-color: variables.$color-btn-border;
+    box-shadow: variables.$color-btn-shadow,variables.$color-btn-inset-shadow;
+
+    position: relative;
+    display: inline-block;
+
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 6px;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+
+    svg {
+      margin-right: 7px;
+    }
+    .btn-text {
+      @include mixins.flex-center;
+    }
+    .btn-count-text {
+      margin-left: 13px;
+    }
+
+  }
+  .btn-git-each:hover {
+    background-color: variables.$color-btn-bg-hover;
+    border-color: variables.$color-btn-border;
+    box-shadow: variables.$color-btn-shadow,variables.$color-btn-inset-shadow;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .present {
+    height: 100vh;
+
+    &__header {
+      margin-top: 129px;
+    }
+
+    &__header, &__text, .github-btn {
+      @include mixins.flex-center;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .present {
+    height: 100vh;
+
+    &__header {
+      margin-top: 129px;
+    }
+
+    &__header, &__text, .github-btn {
+      @include mixins.flex-center;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .present {
+    &__header {
+      font-size: 42px;
+      line-height: 42px;
+      margin-top: 66px;
+    }
+    &__text {
+      padding: 0 40px;
+    }
+  }
 
 }
+
+@media screen and (max-width: 481px) {
+  .present{
+    .btn-download {
+      padding: 0 10px;
+      width: 290px;
+      height: 45px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    .text-after-btn {
+      margin-top: 35.5px;
+    }
+
+    &__header {
+      font-size: 26px;
+      line-height: 28px;
+      padding: 0 34px;
+    }
+
+    &__text {
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .github-btn {
+      padding: 0 34px;
+      //flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+  }
+}
+
+
+
