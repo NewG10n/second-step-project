@@ -5,8 +5,8 @@
   background-color: #4b3b4e;
   background-image: url("img/talking-about-bg.png");
   background-repeat: no-repeat;
-  background-size: auto 840px;
-  background-position: top center;
+  background-size: cover ; // changed 'auto 840px' to 'cover'
+  background-position: bottom center; // changed 'top' to 'bottom'
   padding-bottom: 10px;
 
   &__container {

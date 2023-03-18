@@ -2,7 +2,7 @@
 @import "variables";
 
 .pricing {
-  background: url("img/pricing-bg.png") center / cover no-repeat fixed;
+  background: url("img/pricing-bg.png") top center / cover no-repeat; // changed "center" to "top center" and deleted 'fixed'
 
   &--glass-bg {
     backdrop-filter: blur(30px);
