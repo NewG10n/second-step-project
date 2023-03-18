@@ -2,8 +2,6 @@
 @use "mixins";
 
 .container {
-  //padding-left: 10px;
-  //padding-right: 10px;
   margin: 0 auto;
   padding: 0 10px;
   max-width: 1220px;
@@ -11,10 +9,7 @@
 }
 
 
-
-
 .features {
-  height: 711px;
   background-color: variables.$bg-color-features-section;
   @include mixins.text-font-montserrat;
   position: relative;
@@ -26,19 +21,35 @@
 
   &__left-side {
     @include mixins.flex-blocks;
-    width: 536px;
+    width: 48%;
     padding: 0 10px;
-    .photo img:first-child {
-      margin-bottom: 77px;
-    }
-    .photo img:nth-child(2) {
-      margin-bottom: 64px;
-    }
-    .photo img:nth-child(3) {
-      margin-bottom: 65px;
+
+  }
+  &__left-side-cards:last-child{
+    margin-bottom: 36px;
+  }
+  &__card {
+    @include mixins.flex-between;
+    margin-bottom: 34px;
+    .photo {
+      width: 50%;
+      @include mixins.flex-center;
     }
 
   }
+  &__card:first-child .photo {
+    margin-right: 23px;
+  }
+  &__card:nth-child(2) .photo {
+    margin-right: 34px;
+  }
+  &__card:nth-child(3) .photo {
+    margin-right: 36px;
+  }
+  &__card:nth-child(4) .photo {
+    margin-right: 36px;
+  }
+
   .text &__text-blocks {
     margin-bottom: 34px;
   }
@@ -75,11 +86,10 @@
   &__header {
     @include mixins.text-font-montserrat;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 44px;
     line-height: 50px;
-    //@include mixins.text-flex-start;
     color: variables.$header-color-features-section-btn;
-    margin-left: 50px;
+    width: 48%;
     margin-bottom: 18px;
   }
 }
@@ -89,7 +99,6 @@
     &__wrap {
       margin-top: 98px;
       @include mixins.flex;
-      height: 100vh;
     }
   }
 }
@@ -102,27 +111,29 @@
     }
     &__header {
       order: 1;
+      @include mixins.flex-center;
       margin-bottom: 50px;
+      width: 100%;
+      font-size: 42px;
+      line-height: 44px;
     }
     &__left-side {
       order: 2;
-      width: 703px;
-    }
-    .text &__text-blocks {
-      margin-bottom: 58px;
-    }
-    .photo img:nth-child(2) {
-      margin-right: 25px;
-    }
-    .photo img:nth-child(3) {
-      margin-right: 80px;
-    }
-    .photo img:last-child {
-      margin-bottom: 0;
+      width: 100%;
     }
     #features-photo {
       top: 740px;
       order: 3;
+    }
+    &__card:first-child .photo {
+      margin-right: 1px;
+    }
+    #features-photo {
+      position: relative;
+      right: -5%;
+      top: 76px;
+      width: 95%;
+      padding-bottom: 10px;
     }
 
   }
@@ -137,25 +148,52 @@
     }
     &__header {
       order: 1;
+      //padding: 0 10px;
+      @include mixins.flex-center;
       margin-bottom: 36px;
-      padding: 0 10px;
+      width: 100%;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
     }
     &__left-side {
       order: 2;
-      width: 269px;
+      width: 100%;
     }
-    .photo img:nth-child(2) {
-      margin-right: 25px;
+    &__card, &__text-blocks {
+      @include mixins.flex-column;
+      @include mixins.flex-center;
+
     }
-    .photo img:nth-child(3) {
-      margin-right: 80px;
+    &__card:first-child .photo {
+      margin-bottom: 27px;
+      margin-right: 0;
     }
-    .photo img:last-child {
+    &__card:nth-child(2) .photo {
+      margin-bottom: 21px;
+      margin-right: 0;
+    }
+    &__card:nth-child(3) .photo {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    &__card:nth-child(4) .photo {
+      margin-bottom: 23px;
+      margin-right: 0;
+    }
+    &__text-blocks-paragraph {
+      text-align: center;
+    }
+    &__left-side-cards:last-child{
       margin-bottom: 0;
     }
     #features-photo {
-      top: 740px;
       order: 3;
+      position: relative;
+      right: -25%;
+      top: 64px;
+      width: 100%;
+      padding-bottom: 65px;
     }
 
   }

@@ -10,7 +10,6 @@
 }
 
 .present {
-  height: 391px;
   position: relative;
 
   &__wrap {
@@ -30,6 +29,7 @@
     height: 62px;
     background: variables.$header-color-features-section-btn;
     border-radius: 40px;
+    transition-duration: 0.3s;
 
    @include mixins.text-font-montserrat;
     font-weight: 700;
@@ -54,9 +54,13 @@
 
   .btn-download:hover {
     background: variables.$white-color;
-    border: 2px solid variables.$header-color-features-section-btn;
-    border-radius: 40px;
+    border: 1px solid variables.$header-color-features-section-btn;
+    //border-radius: 40px;
     color: variables.$header-color-features-section-btn;
+  }
+  .btn-download:active{
+    box-shadow: 0 0 10px variables.$hdr-nav-txt-color;
+    transform: scale(0.98);
   }
 
 
@@ -94,6 +98,7 @@
     padding: 3px 12px;
     font-size: 12px;
     line-height: 20px;
+    transition-duration: 0.3s;
 
     color: variables.$color-btn-text;
     background-color: variables.$color-btn-bg;
@@ -195,8 +200,7 @@
       line-height: 20px;
     }
     .github-btn {
-      padding: 0 34px;
-      //flex-direction: column;
+      padding: 0 10px;
       flex-wrap: wrap;
     }
 
