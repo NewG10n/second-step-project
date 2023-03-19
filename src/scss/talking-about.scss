@@ -3,10 +3,10 @@
 
 .main-talking-about {
   background-color: #4b3b4e;
-  background-image: url("../img/talking-about-bg.png");
+  background-image: url("img/talking-about-bg.png");
   background-repeat: no-repeat;
-  background-size: cover ; // changed 'auto 840px' to 'cover'
-  background-position: bottom center; // changed 'top' to 'bottom'
+  background-size: cover;
+  background-position: bottom center;
   padding-bottom: 10px;
 
   &__container {
