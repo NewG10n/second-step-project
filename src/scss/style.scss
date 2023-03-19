@@ -8,10 +8,13 @@
 @import "talking-about";
 
 // Common styles
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 a {

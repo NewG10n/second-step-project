@@ -161,8 +161,7 @@
     color: #FFFFFF;
   }
 
-  &__drop-menu-item:focus
-  {
+  &__drop-menu-item:focus, &__drop-menu-item:active {
     color: $primary-color;
     transform: translateX(4px);
   }
