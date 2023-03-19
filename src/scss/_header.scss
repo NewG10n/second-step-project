@@ -160,8 +160,9 @@
     border-bottom: 3px solid #3B3B3B;
     color: #FFFFFF;
   }
-  &__drop-menu-item.active:focus,
-  &__drop-menu-item.active{
+
+  &__drop-menu-item:focus // deleted .active, added :focus
+  {
     color: $hdr-nav-txt-color;
     transform: translateX(4px);
   }
@@ -177,7 +178,7 @@
     opacity: 0;
     transform: scale(0);
   }
-  &__drop-menu-item.active::before{
+  &__drop-menu-item:focus::before{ // deleted .active, added :focus
     opacity: 1;
     transform: scale(1);
   }
