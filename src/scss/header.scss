@@ -158,10 +158,9 @@
     line-height: 26px;
     transition-duration: 0.3s;
     border-bottom: 3px solid #3B3B3B;
-    color: #FFFFFF;
+    color: $clear-white;
   }
-
-  &__drop-menu-item:focus, &__drop-menu-item:active {
+  &__drop-menu-item:active, &__drop-menu-item:hover{
     color: $primary-color;
     transform: translateX(4px);
   }
@@ -177,7 +176,7 @@
     opacity: 0;
     transform: scale(0);
   }
-  &__drop-menu-item:focus::before{
+  &__drop-menu-item:hover::before{
     opacity: 1;
     transform: scale(1);
   }
