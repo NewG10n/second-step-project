@@ -1,0 +1,28 @@
+@import "../../node_modules/scss-reset/src/scss/_reset.scss";
+@import "variables";
+@import "mixins";
+@import "header";
+@import "features-section";
+@import "presentation-section";
+@import "pricing-section";
+@import "talking-about";
+
+// Common styles
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+  @include flex-center;
+}

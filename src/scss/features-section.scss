@@ -1,0 +1,201 @@
+@use "variables";
+@use "mixins";
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
+  @include mixins.flex-center;
+}
+
+
+.features {
+  background-color: variables.$bg-lightgray;
+  @include mixins.text-font-normal;
+  position: relative;
+
+  &__wrap {
+    margin-top: 98px;
+    @include mixins.flex-around;
+  }
+
+  &__left-side {
+    @include mixins.flex-between;
+    width: 48%;
+    padding: 0 10px;
+
+  }
+  &__left-side-cards:last-child{
+    margin-bottom: 36px;
+  }
+  &__card {
+    @include mixins.flex-between;
+    margin-bottom: 34px;
+
+    .photo {
+      width: 35%;
+      @include mixins.flex-center;
+    }
+
+    .features__text-blocks {
+      width:90%;
+    }
+
+  }
+
+  &__text-blocks {
+    margin-bottom: 34px;
+  }
+
+  &__text-blocks:last-child {
+    margin-bottom: 0;
+  }
+
+  &__text-blocks-header {
+    @include mixins.text-font-normal;
+    font-size: 16px;
+    line-height: 21px;
+    @include mixins.text-flex-center;
+    color: variables.$text-secondary-color;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__text-blocks-paragraph {
+    @include mixins.text-font-normal;
+    font-size: 14px;
+    line-height: 21px;
+    @include mixins.text-flex-center;
+    color: variables.$text-primary-color;
+  }
+
+  #features-photo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__header {
+    @include mixins.text-font-normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    color: variables.$primary-color;
+    width: 48%;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .features {
+    &__wrap {
+      margin-top: 98px;
+      @include mixins.flex-around;
+    }
+  }
+
+  #features-photo {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .features {
+    &__wrap {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    &__header {
+      order: 1;
+      @include mixins.flex-center;
+      margin-bottom: 50px;
+      width: 100%;
+      font-size: 42px;
+      line-height: 44px;
+    }
+    &__left-side {
+      order: 2;
+      width: 100%;
+    }
+    #features-photo {
+      top: 740px;
+      order: 3;
+    }
+    &__card:first-child .photo {
+      margin-right: 1px;
+    }
+
+    &__card:last-child {
+      margin-bottom: 0;
+    }
+
+    #features-photo {
+      position: relative;
+      right: -1.2%;
+      top: 76px;
+      min-width: 100%;
+      padding-bottom: 65px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .features {
+    &__wrap {
+      @include mixins.flex-between;
+      flex-wrap: wrap;
+
+    }
+    &__header {
+      order: 1;
+      @include mixins.flex-center;
+      margin-bottom: 36px;
+      width: 100%;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+    }
+    &__left-side {
+      order: 2;
+      width: 100%;
+    }
+    &__card, &__text-blocks {
+      @include mixins.flex-column;
+      @include mixins.flex-center;
+
+    }
+    &__card:first-child .photo {
+      margin-bottom: 27px;
+      margin-right: 0;
+    }
+    &__card:nth-child(2) .photo {
+      margin-bottom: 21px;
+      margin-right: 0;
+    }
+    &__card:nth-child(3) .photo {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    &__card:nth-child(4) .photo {
+      margin-bottom: 23px;
+      margin-right: 0;
+    }
+    &__text-blocks-paragraph {
+      text-align: center;
+    }
+    &__left-side-cards:last-child{
+      margin-bottom: 0;
+    }
+    #features-photo {
+      order: 3;
+      position: relative;
+      top: 64px;
+      max-width: 200%;
+      padding-bottom: 65px;
+    }
+
+  }
+
+}
