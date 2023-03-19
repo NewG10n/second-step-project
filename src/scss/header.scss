@@ -160,7 +160,7 @@
     border-bottom: 3px solid #3B3B3B;
     color: $clear-white;
   }
-  &__drop-menu-item:active, &__drop-menu-item:hover{
+  &__drop-menu-item:focus, &__drop-menu-item:hover{
     color: $primary-color;
     transform: translateX(4px);
   }
