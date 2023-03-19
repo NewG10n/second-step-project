@@ -14,17 +14,17 @@
   color: #FFFFFF;
   width: 119px;
   height: 37px;
-  background: $hdr-nav-txt-color;
+  background: $primary-color;
   transition-duration: 0.3s;
   border-radius: 40px;
 }
 .header-btn:hover{
   background: #FFFFFF;
-  color: $hdr-nav-txt-color;
-  border: 1px solid $hdr-nav-txt-color;
+  color: $primary-color;
+  border: 1px solid $primary-color;
 }
 .header-btn:active{
-  box-shadow: 0 0 10px $hdr-nav-txt-color;
+  box-shadow: 0 0 10px $primary-color;
   transform: scale(0.98);
 }
 
@@ -37,7 +37,7 @@
   &__nav {
     height: 103px;
     padding: 0 15px;
-    background-color: $hdr-nav-bg-color;
+    background-color: $bg-darkgray;
     @include flex-center;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -51,17 +51,17 @@
     transform: scale(0.98);
   }
   &__nav-logo a:hover > .header__nav-logo-text{
-    color: $hdr-nav-txt-hover-color;
+    color: $clear-white;
   }
   &__nav-logo a:hover > .header__nav-logo-svg{
-    fill: $hdr-nav-txt-hover-color;
+    fill: $clear-white;
   }
 
   &__nav-logo-svg {
     height: 41px;
     width: 43px;
     transition-duration: 0.3s;
-    fill: $hdr-nav-txt-color;
+    fill: $primary-color;
   }
 
   &__nav-logo-text {
@@ -72,7 +72,7 @@
     font-size: 24px;
     line-height: 16px;
     transition-duration: 0.3s;
-    color: $hdr-nav-txt-color;
+    color: $primary-color;
     text-transform: uppercase;
   }
 
@@ -80,7 +80,7 @@
     position: relative;
     width: 26px;
     height: 21px;
-    background-color: $hdr-nav-bg-color;
+    background-color: $bg-darkgray;
   }
   &__dropdown-burger::after {
     content: '';
@@ -161,14 +161,14 @@
     color: #FFFFFF;
   }
 
-  &__drop-menu-item:focus // deleted .active, added :focus
+  &__drop-menu-item:focus
   {
-    color: $hdr-nav-txt-color;
+    color: $primary-color;
     transform: translateX(4px);
   }
   &__drop-menu-item::before{
     content: '';
-    background-color: $hdr-nav-txt-color;
+    background-color: $primary-color;
     position: absolute;
     width: 8px;
     height: 53px;
@@ -178,12 +178,12 @@
     opacity: 0;
     transform: scale(0);
   }
-  &__drop-menu-item:focus::before{ // deleted .active, added :focus
+  &__drop-menu-item:focus::before{
     opacity: 1;
     transform: scale(1);
   }
   &__nav-menu-item {
-    color: $hdr-nav-txt-color;
+    color: $primary-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -194,7 +194,7 @@
     margin-right: 0;
   }
   &__nav-menu-item:hover{
-    color: $hdr-nav-txt-hover-color;
+    color: $clear-white;
   }
   &__nav-menu-item:active{
     transform: scale(0.98);
@@ -214,13 +214,13 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
-    color: $hdr-title-color;
+    color: $clear-white;
   }
   &__hat-text {
     padding-top: 19px;
     font-size: 18px;
     line-height: 24px;
-    color: $hdr-text-color;
+    color: $primary-color;
 
     &--medium {
       font-family: 'Lato', sans-serif;
@@ -233,7 +233,7 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: $hdr-subtext-color;
+    color: $text-primary-color;
   }
 }
 

@@ -2,7 +2,6 @@ const { src, dest, watch, parallel, series } = require("gulp");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 const sass = require("gulp-sass")(require("sass"));
-const purgecss = require("gulp-purgecss");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");

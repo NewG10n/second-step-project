@@ -1,7 +1,3 @@
-"use strict";
-console.log('Hello');
-
-
 let menuBtn = document.querySelector('.header__dropdown-burger');
 let menu = document.querySelector('.header__dropdown-menu');
 

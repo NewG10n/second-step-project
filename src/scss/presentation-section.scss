@@ -58,7 +58,7 @@
     color: variables.$primary-color;
   }
   .btn-download:active{
-    box-shadow: 0 0 10px variables.$hdr-nav-txt-color;
+    box-shadow: 0 0 10px variables.$primary-color;
     transform: scale(0.98);
   }
 
