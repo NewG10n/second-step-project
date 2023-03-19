@@ -14,21 +14,12 @@
   flex-direction: column;
 }
 
-
-//section "Here is what you get"
-@mixin flex {
+@mixin flex-around {
   display: flex;
   justify-content: space-around;
 }
 
-@mixin flex-blocks {
-  display: flex;
-  justify-content: space-between;
-  //align-items: center;
-}
-
-@mixin text-font-montserrat {
-  font-family: "Montserrat", sans-serif;
+@mixin text-font-normal {
   font-style: normal;
   font-weight: 400;
 }
