@@ -31,7 +31,7 @@
 .header {
 
   &__wrapper {
-    background: url("../img/header-bg.png") center / 450% no-repeat;
+    background: url("img/header-bg.png") center / 450% no-repeat;
   }
 
   &__nav {
@@ -241,7 +241,7 @@
 
   .header {
     &__wrapper {
-      background: url("../img/header-bg.png") center bottom/ cover no-repeat;
+      background: url("img/header-bg.png") center bottom/ cover no-repeat;
     }
     &__nav {
       height: 118px;
@@ -338,7 +338,7 @@
 @media screen and (min-width: 1440px) {
   .header {
     &__wrapper {
-      background: url("../img/header-bg.png") center / cover no-repeat;
+      background: url("img/header-bg.png") center / cover no-repeat;
       height: 100vh;
     }
   }
