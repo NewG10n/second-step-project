@@ -135,7 +135,6 @@
 }
 @media screen and (min-width: 1440px) {
   .present {
-    height: 100vh;
 
     &__header {
       margin-top: 129px;
@@ -149,7 +148,6 @@
 
 @media screen and (min-width: 1440px) {
   .present {
-    height: 100vh;
 
     &__header {
       margin-top: 129px;
@@ -183,6 +181,7 @@
       height: 45px;
       font-size: 18px;
       line-height: 20px;
+      top: -23px;
     }
     .text-after-btn {
       margin-top: 35.5px;

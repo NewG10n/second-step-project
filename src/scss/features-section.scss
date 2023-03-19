@@ -31,32 +31,35 @@
   &__card {
     @include mixins.flex-between;
     margin-bottom: 34px;
+
     .photo {
-      width: 50%;
+      width: 35%;
       @include mixins.flex-center;
     }
 
-  }
-  &__card:first-child .photo {
-    margin-right: 23px;
-  }
-  &__card:nth-child(2) .photo {
-    margin-right: 34px;
-  }
-  &__card:nth-child(3) .photo {
-    margin-right: 36px;
-  }
-  &__card:nth-child(4) .photo {
-    margin-right: 36px;
-  }
+    .features__text-blocks {
+      width:90%;
+    }
 
-  .text &__text-blocks {
+  }
+  //&__card:first-child .photo {
+  //  margin-right: 23px;
+  //}
+  //&__card:nth-child(2) .photo {
+  //  margin-right: 34px;
+  //}
+  //&__card:nth-child(3) .photo {
+  //  margin-right: 36px;
+  //}
+  //&__card:nth-child(4) .photo {
+  //  margin-right: 36px;
+  //}
+
+  &__text-blocks {
     margin-bottom: 34px;
   }
 
-
-
-  .text &__text-blocks:last-child {
+  &__text-blocks:last-child {
     margin-bottom: 0;
   }
 
@@ -67,6 +70,7 @@
     @include mixins.text-flex-center;
     color: variables.$title-text-color-features-section;
     margin-bottom: 16px;
+    text-align: center;
   }
 
   &__text-blocks-paragraph {
@@ -80,7 +84,7 @@
   #features-photo {
     position: absolute;
     right: 0;
-    top: 159px;
+    bottom: 0;
   }
 
   &__header {
@@ -91,6 +95,7 @@
     color: variables.$header-color-features-section-btn;
     width: 48%;
     margin-bottom: 18px;
+    text-align: center;
   }
 }
 
@@ -100,6 +105,10 @@
       margin-top: 98px;
       @include mixins.flex;
     }
+  }
+
+  #features-photo {
+    max-width: 50%;
   }
 }
 
@@ -128,11 +137,16 @@
     &__card:first-child .photo {
       margin-right: 1px;
     }
+
+    &__card:last-child {
+      margin-bottom: 0;
+    }
+
     #features-photo {
       position: relative;
-      right: -5%;
+      right: -1.2%;
       top: 76px;
-      width: 100%;
+      min-width: 100%;
       padding-bottom: 65px;
     }
 
@@ -191,7 +205,7 @@
       order: 3;
       position: relative;
       top: 64px;
-      width: 100%;
+      max-width: 200%;
       padding-bottom: 65px;
     }
 
